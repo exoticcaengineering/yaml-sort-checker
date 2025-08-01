@@ -10,7 +10,7 @@ class SortChecker
 {
     private bool $useCaseSensitiveComparison;
 
-    public function __construct(bool $useCaseSensitiveComparison)
+    public function __construct(bool $useCaseSensitiveComparison = false)
     {
         $this->useCaseSensitiveComparison = $useCaseSensitiveComparison;
     }
@@ -36,7 +36,7 @@ class SortChecker
 			}
 			$data = Yaml::parse($yamlContent, Yaml::PARSE_CUSTOM_TAGS);
 
-			$errors = $this->areDataSorted($data, $excludedKeys, $excludedSections, null, $depth);
+			$errors = $this->areDataSorted($data, $excludedKeys, $excludedSections, $depth, null);
 
 			return new SortCheckResult($errors);
 
@@ -59,8 +59,8 @@ class SortChecker
 		array $yamlData,
 		array $excludedKeys,
 		array $excludedSections,
-		?string $parent = null,
-		int $depth
+		int $depth,
+		?string $parent = null
 	): array
 	{
 		if ($depth === 0) {
@@ -108,8 +108,8 @@ class SortChecker
 						$value,
 						$nextExcludedKeys,
 						$nextExcludedSections,
+                        $depth - 1,
 						($parent !== null ? $parent . '.' : '') . $key,
-						$depth - 1
 					)
 				);
 			}
