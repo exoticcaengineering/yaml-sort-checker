@@ -8,7 +8,7 @@ class SortCheckResult
 {
 
 	/** @var string[] */
-	private $messages;
+	private array $messages;
 
 	/**
 	 * @param string[] $messages

@@ -30,7 +30,7 @@ Until [WI-35271](https://youtrack.jetbrains.com/issue/WI-35271) is resolved, YAM
 
 Requirements
 ------------
-Works with PHP 7.2 or higher and Symfony 3.4 or higher.
+Works with PHP 8.3 or higher and Symfony 3.4 or higher.
 
 Optional Configuration
 ----------------------
@@ -39,6 +39,16 @@ Optional Configuration
 `true` - sort checker will expect upercase to be placed before lowercase
 
 `false` - sort checker will ignore casing *(default value)*
+
+Development
+-----------
+
+```bash
+# Install composer dependencies
+docker compose run --rm composer composer install
+# Run tests
+docker compose run --rm php vendor/bin/phpunit
+```
 
 Submitting bugs and feature requests
 ------------------------------------
