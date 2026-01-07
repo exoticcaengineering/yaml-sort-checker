@@ -1,6 +1,6 @@
-# YAML file sort checker [![Build Status](https://travis-ci.org/mhujer/yaml-sort-checker.svg?branch=master)](https://travis-ci.org/mhujer/yaml-sort-checker)
+# YAML file sort checker
 
-[![Latest Stable Version](https://poser.pugx.org/mhujer/yaml-sort-checker/version.png)](https://packagist.org/packages/mhujer/yaml-sort-checker) [![Total Downloads](https://poser.pugx.org/mhujer/yaml-sort-checker/downloads.png)](https://packagist.org/packages/mhujer/yaml-sort-checker) [![License](https://poser.pugx.org/mhujer/yaml-sort-checker/license.svg)](https://packagist.org/packages/mhujer/yaml-sort-checker)
+[![Latest Stable Version](https://poser.pugx.org/exoticca/yaml-sort-checker/version.png)](https://packagist.org/packages/exoticca/yaml-sort-checker) [![Total Downloads](https://poser.pugx.org/exoticca/yaml-sort-checker/downloads.png)](https://packagist.org/packages/mhujer/yaml-sort-checker) [![License](https://poser.pugx.org/exoticca/yaml-sort-checker/license.svg)](https://packagist.org/packages/mhujer/yaml-sort-checker)
 
 This library helps you to keep YAML file sorted to prevent unnecessary merge conflicts.
 
@@ -52,7 +52,7 @@ docker compose run --rm php vendor/bin/phpunit
 
 Submitting bugs and feature requests
 ------------------------------------
-Bugs and feature request are tracked on [GitHub](https://github.com/mhujer/yaml-sort-checker/issues)
+Bugs and feature request are tracked on [GitHub](https://github.com/exoticcaengineering/yaml-sort-checker/issues)
 
 Author
 ------
